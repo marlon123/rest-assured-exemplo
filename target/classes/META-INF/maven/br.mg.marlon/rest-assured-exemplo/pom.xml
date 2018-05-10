@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.mg.marlon</groupId>
+  <artifactId>rest-assured-exemplo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>rest-assured-exemplo</name>
+
+	<dependencies>
+		
+		<!-- Biblioteca do framework rest-assured  -->
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>2.4.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- Biblioteca responsável por ler as respostas das mensagens retornadas pela API -->
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+		
+		<!-- Biblioteca responsável por validar se a estrutura da resposta está correta -->
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>2.4.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- Biblioteca que auxilia na escrita de testes automatizados -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
+
+</project>
