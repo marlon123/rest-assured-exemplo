@@ -2,13 +2,12 @@ package apitest;
 
 import static com.jayway.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 import org.junit.Test;
 
 public class TestesAPI {
 	
 	public TestesAPI() {
-		baseURI = "https://postman-echo.com/post";
+		baseURI = "https://postman-echo.com";
 	}
 	
 	@Test
@@ -23,7 +22,7 @@ public class TestesAPI {
            .body(myJson)
            //quando (when) for por meio do método POST,
          .when()
-           .post("/")
+           .post("/post/")
            //o resultado esperado é que o status de retorno seja igual a 200
          .then()
            .statusCode(200);    
@@ -33,13 +32,15 @@ public class TestesAPI {
 	/*Chama o serviço pelo método GET*/
 	public void testRequisicaoGet() {
 		/*Dado uma URL, quando a requisição for feita usando o 
-		 * tipo GET, passando o parâmetro 1
+		 * tipo GET, passando o parâmetro 123
 		 */
 		given()
 		.when()
-			.get("/123")
+			.get("/get?test=123")
 		.then()
-			.statusCode(200);
+			.statusCode(200)
+			.body("url", equalTo("https://postman-echo.com/get?test=123"))
+			.body("headers.host", equalTo("postman-echo.com"));
 	}
 
 }

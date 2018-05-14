@@ -1,0 +1,119 @@
+  1 {
+  2   "$id": "http://example.com/example.json", 
+  3   "type": "object", 
+  4   "definitions": {}, 
+  5   "$schema": "http://json-schema.org/draft-07/schema#", 
+  6   "properties": {
+  7     "args": {
+  8       "$id": "/properties/args", 
+  9       "type": "object", 
+ 10       "properties": {
+ 11         "test": {
+ 12           "$id": "/properties/args/properties/test", 
+ 13           "type": "string", 
+ 14           "title": "The Test Schema ", 
+ 15           "default": "", 
+ 16           "examples": [
+ 17             "123"
+ 18           ]
+ 19         }
+ 20       }
+ 21     }, 
+ 22     "headers": {
+ 23       "$id": "/properties/headers", 
+ 24       "type": "object", 
+ 25       "properties": {
+ 26         "host": {
+ 27           "$id": "/properties/headers/properties/host", 
+ 28           "type": "string", 
+ 29           "title": "The Host Schema ", 
+ 30           "default": "", 
+ 31           "examples": [
+ 32             "postman-echo.com"
+ 33           ]
+ 34         }, 
+ 35         "accept": {
+ 36           "$id": "/properties/headers/properties/accept", 
+ 37           "type": "string", 
+ 38           "title": "The Accept Schema ", 
+ 39           "default": "", 
+ 40           "examples": [
+ 41             "*/*"
+ 42           ]
+ 43         }, 
+ 44         "accept-encoding": {
+ 45           "$id": "/properties/headers/properties/accept-encoding", 
+ 46           "type": "string", 
+ 47           "title": "The Accept-encoding Schema ", 
+ 48           "default": "", 
+ 49           "examples": [
+ 50             "gzip, deflate, br"
+ 51           ]
+ 52         }, 
+ 53         "accept-language": {
+ 54           "$id": "/properties/headers/properties/accept-language", 
+ 55           "type": "string", 
+ 56           "title": "The Accept-language Schema ", 
+ 57           "default": "", 
+ 58           "examples": [
+ 59             "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+ 60           ]
+ 61         }, 
+ 62         "cache-control": {
+ 63           "$id": "/properties/headers/properties/cache-control", 
+ 64           "type": "string", 
+ 65           "title": "The Cache-control Schema ", 
+ 66           "default": "", 
+ 67           "examples": [
+ 68             "no-cache"
+ 69           ]
+ 70         }, 
+ 71         "postman-token": {
+ 72           "$id": "/properties/headers/properties/postman-token", 
+ 73           "type": "string", 
+ 74           "title": "The Postman-token Schema ", 
+ 75           "default": "", 
+ 76           "examples": [
+ 77             "d3b0b863-9190-36fd-6cc9-b074d1ff4694"
+ 78           ]
+ 79         }, 
+ 80         "user-agent": {
+ 81           "$id": "/properties/headers/properties/user-agent", 
+ 82           "type": "string", 
+ 83           "title": "The User-agent Schema ", 
+ 84           "default": "", 
+ 85           "examples": [
+ 86             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+ 87           ]
+ 88         }, 
+ 89         "x-forwarded-port": {
+ 90           "$id": "/properties/headers/properties/x-forwarded-port", 
+ 91           "type": "string", 
+ 92           "title": "The X-forwarded-port Schema ", 
+ 93           "default": "", 
+ 94           "examples": [
+ 95             "443"
+ 96           ]
+ 97         }, 
+ 98         "x-forwarded-proto": {
+ 99           "$id": "/properties/headers/properties/x-forwarded-proto", 
+100           "type": "string", 
+101           "title": "The X-forwarded-proto Schema ", 
+102           "default": "", 
+103           "examples": [
+104             "https"
+105           ]
+106         }
+107       }
+108     }, 
+109     "url": {
+110       "$id": "/properties/url", 
+111       "type": "string", 
+112       "title": "The Url Schema ", 
+113       "default": "", 
+114       "examples": [
+115         "https://postman-echo.com/get?test=123"
+116       ]
+117     }
+118   }
+119 }
